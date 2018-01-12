@@ -1,0 +1,148 @@
+/*@media all(max-width:600px)*/
+
+/* ##### ESSENTIALS ##### */
+
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+    
+    background-color: black;
+    
+}
+
+*{
+
+    text-decoration: none;
+    font-family: Dosis;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* ##### HEADER ##### */
+
+
+header {
+
+    opacity: 0.5;
+    height: 150px;
+    display: block;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+header:hover {
+    
+    opacity: 1;
+    
+}
+
+header ul {
+    
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul a {
+
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+    background-color: gray;
+}
+
+header ul a {
+
+    margin-left: 100px;
+    background-color: gray;
+        
+}
+
+header ul a:hover {
+
+    color: black;
+    background-color: white;
+        
+}
+
+
+
+header img {
+
+    height: 100%;
+
+}
+
+/* ##### TEXT STYLING ##### */
+
+
+/* ##### PAGE CONTENT ##### */
+
+#content-wrapper {
+
+    display: grid;
+    width: 100wh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh 150vh;
+    grid-template-areas: 
+    "tit"
+    "hro"
+
+} 
+
+#title-screen {
+
+    background-image: url("../images/Jamaica.png");
+    background-size: cover;
+    grid-area: tit;
+
+}
+
+#hero-selector {
+    
+    background-size: cover;
+    background-image: url("../images/Via_La_Mexico_Map2.png");
+    grid-area: hro;
+    
+}
+
+
+
+.pixel-perfect {
+
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+
+}
+
+html body {
+
+    overflow: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+}
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+}
+
+@media all and (max-width: 767px){
+
+    body{
+        background-color: black;
+    }
+
+}
